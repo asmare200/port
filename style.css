@@ -16,6 +16,71 @@ body {
     margin: 0;
     padding: 0;
 }
+* Base styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+.submit-button {
+    background-color: #28a745; /* Green button */
+    color: white; /* White text */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+footer {
+    text-align: center; /* Centered footer text */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 15px; /* Increase padding for touch targets */
+        font-size: 16px; /* Increase font size for readability */
+    }
+
+    .submit-button {
+        padding: 15px; /* Increase button padding for touch targets */
+        font-size: 16px; /* Increase button font size */
+    }
+
+    footer {
+        font-size: 14px; /* Adjust footer font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 20px; /* Further increase padding for small screens */
+        font-size: 18px; /* Further increase font size for better readability */
+    }
+
+    .submit-button {
+        padding: 20px; /* Further increase button padding */
+        font-size: 18px; /* Further increase button font size */
+    }
+
+    footer {
+        font-size: 12px; /* Adjust footer font size for very small screens */
+        margin-top: 10px; /* Reduce space above footer */
+    }
+}
 
 header {
     background-color: #28a745; /* Green header */

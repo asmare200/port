@@ -9,6 +9,90 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #ffe6f2; /* Light pink background */
 }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Change to block for mobile */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%; /* Full width on mobile */
+    padding: 10px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    nav ul li {
+        display: inline; /* Keep inline for larger screens */
+        margin-right: 20px;
+    }
+
+    .profile-container {
+        flex-direction: row; /* Side by side on larger screens */
+        justify-content: center;
+    }
+
+    .profile-photo {
+        margin-right: 20px; /* Space between photo and text */
+    }
+}
 
 header {
     background-color: #28a745; /* Green header */

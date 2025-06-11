@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Asmare Endawoke</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Hi,I'm Asmare </h1>
+        
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="Images/background.png.jpg" alt="Asmara's Photo">
+            </div>
+            <div class="contact-info">
+               
+            </div>
+        </div>
+
+        <section id="home" class="welcome-section">
+            <h2>About Me</h2>
+            <p>I'm a Software Engineering student.I have some experience in coding and world of technology
+                .My journy in software development has equipped me with strong foundation in programming
+                languge such as Java,Python and C++.</p>
+        </section>
+        <div class="work-photo">
+            <img src="Images/work-1.jpg" alt="work photo">
+        </div>
+        <section id="services" class="services-section">
+            <h2>Services</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Mobile App Development</li>
+                <li>Graphics Design</li>
+            </ul>
+        </section>
+
+        <section id="education" class="education-section">
+            <h2>Education</h2>
+            <p>
+               <li>I am currently student of Software Engineering. I learn and practice in different
+                types of programming languge.those are C++,Java,Python.
+                I practice c++ languge percently 60%.
+                I practice  Java language percentl  65%.
+                I practice Python language percently  63%.
+            </p>
+            <p>Debremarkos university - Software Engineering: Fourth Year</ Student.p>
+        </section>
+
+        <section id="experience" class="experience-section">
+            <h2>Experience</h2>
+            <ul>
+                <li>I have gained valuable experience through a combination of and collabrotive work.</li>
+                <li>I have develop programming languge such </li>
+                <li>Java,C++,Python and I have applied this skill in project.</li>
+                  
+            </ul>
+        </section>
+
+    </header>
+
+    
+    <section id="contact" class="contact-section">
+            <h2>Contact  me:</h2>
+            <form id="contactForm" action="https://formspree.io/f/endawokeasmare796@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"required>
+                </div>
+                <div class="form-group">
+             
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+             
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message"required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+            <p id="thankYouMessage" class="thank-you-message"></p>
+        </section>
+    
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('emailError');
+        const thankYouMessage = document.getElementById('thankYouMessage');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Email validation
+            const emailValue = emailInput.value;
+            const emailPattern = /^[^s@]+@[^s@]+.[^s@]+$/;
+            if (!emailPattern.test(emailValue)) {
+                emailError.textContent = 'Incorrect email format';
+                emailInput.classList.add('error');
+                return;
+            } else {
+                emailError.textContent = '';
+                emailInput.classList.remove('error');
+            }
+
+            // If validation is successful
+            thankYouMessage.textContent = 'Thank you for your message!';
+            contactForm.reset(); // Reset the form fields
+        });
+    </script>
+        </section>
+ 
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <section id="contact" class="contact-section">
+            
+                <p></p>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> <a href="https://www.Email.com/Asmare" target="_blank">endawokeasmare796@gmail</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+1234567890">+251991631210</a></li>
+                    <li><strong>Telegram:</strong> <a href="https://t.me/@astrue1221" target="_blank">@astrue1221</a></li>
+                    
+                </ul>
+            </section>
+            <p</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; copy write 2025 Asmare Endawoke . All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

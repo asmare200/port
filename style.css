@@ -23,6 +23,13 @@ body {
     padding: 0;
 }
 * Base styles */
+.welcome-section,
+.services-section,
+.education-section,
+.experience-section,
+.login-section,
+.contact-section
+{
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -86,6 +93,7 @@ footer {
         font-size: 12px; /* Adjust footer font size for very small screens */
         margin-top: 10px; /* Reduce space above footer */
     }
+}
 }
 
 header {

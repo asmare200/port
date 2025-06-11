@@ -145,67 +145,6 @@ input[type="password"] {
 
 .submit-button:hover {
     background-color: #218838; /* Darker green on hover */
-    * Mobile Styles */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column; /* Stack header items vertically */
-        align-items: flex-start; /* Align items to the left */
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column; /* Stack nav items vertically */
-        margin-top: 10px; /* Space above nav */
-    }
-
-    nav ul li {
-        margin-left: 0; /* Remove left margin for stacked items */
-        margin-bottom: 10px; /* Space between nav items */
-    }
-
-    main {
-        padding: 10px; /* Reduce padding for mobile */
-    }
-
-    .profile-container {
-        flex-direction: column; /* Stack profile photo and info */
-        align-items: center; /* Center align items */
-    }
-
-    .profile-photo img {
-        width: 100px; /* Smaller profile photo on mobile */
-    }
-
-    .work-photo img {
-        width: 100%; /* Full width for work photo */
-        max-width: 100%; /* Ensure it doesn't exceed container width */
-    }
-
-    .welcome-section,
-    .services-section,
-    .education-section,
-    .experience-section,
-    .contact-section {
-        width: 90%; /* Wider sections on mobile */
-        margin: 20px auto; /* Center sections */
-    }
-
-    h2 {
-        font-size: 1.5em; /* Slightly smaller headings */
-    }
-
-    input[type="text"],
-    input[type="tel"],
-    input[type="email"],
-    textarea {
-        font-size: 14px; /* Adjust font size for inputs */
-    }
-
-    .submit-button {
-        width: 100%; /* Full width button */
-        padding: 15px; /* More padding for better touch target */
-    }
-}
 }
 
 footer {

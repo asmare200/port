@@ -9,8 +9,14 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #ffe6f2; /* Light pink background */
 }
+.welcome-section,
+.services-section,
+.education-section,
+.experience-section,
+.login-section,
+.contact-section
 
-body {
+ {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;

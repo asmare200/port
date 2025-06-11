@@ -156,4 +156,13 @@ ul {
     .contact-section {
         width: 60%; /* Adjust width for larger screens */
     }
+     footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
 }

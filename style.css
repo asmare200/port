@@ -1,3 +1,4 @@
+
 /* General Reset */
 * {
     box-sizing: border-box;
@@ -7,9 +8,11 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     background-color: #ffe6f2; /* Light pink background */
 }
 
+/* Header Styles */
 header {
     background-color: #28a745; /* Green header */
     color: white; /* White text in header */
@@ -18,9 +21,12 @@ header {
 
 .header-content {
     display: flex;
-
     justify-content: space-between; /* Space between title and nav */
     align-items: center; /* Center items vertically */
+}
+
+.header-content h1 {
+    margin: 0;
 }
 
 nav ul {
@@ -37,6 +43,7 @@ nav ul li a {
     text-decoration: none; /* Remove underline */
 }
 
+/* Main Content Styles */
 main {
     display: flex;
     flex-direction: column; /* Stack sections vertically */
@@ -44,6 +51,7 @@ main {
     padding: 20px;
 }
 
+/* Profile Container */
 .profile-container {
     display: flex; /* Flexbox for profile layout */
     margin-bottom: 20px; /* Margin below profile section */
@@ -53,15 +61,28 @@ main {
     width: 150px; /* Set width for profile photo */
     border-radius: 50%; /* Circular photo */
 }
-.work-photo img{
-    width:400px;
-    border-right:50% ;
 
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
 }
-ul{
-    display: contents;
-    margin-bottom: 50px;
+
+/* Section Styles */
+section {
+    padding: 20px;
 }
+
+/* Work Photo Styles */
+.work-photo img {
+    width: 400px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
 input[type="text"],
 input[type="tel"],
 input[type="email"],
@@ -72,6 +93,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 input.error {
     border-color: red;
 }
@@ -81,22 +103,23 @@ input.error {
     font-size: 12px;
 }
 
-.contact-info {
-    margin-left: 20px; /* Space between photo and contact info */
+/* Button Styles */
+button {
+    padding: 10px 15px;
 }
 
+/* Section Backgrounds and Styles */
 .welcome-section,
 .services-section,
 .education-section,
 .experience-section,
-.login-section,
 .contact-section {
     background-color: white; /* White background for sections */
     padding: 20px;
     margin: 30px 0; /* Margin between sections */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 30%; /* Full width of container */
+    width: 90%; /* Full width of container on mobile */
     max-width: 800px; /* Max width for sections to create a box effect */
 }
 
@@ -104,43 +127,33 @@ h2 {
     margin-bottom: 15px; /* Space below headings */
 }
 
+/* List Styles */
 ul {
     list-style-type: disc; /* Bulleted list */
     margin-left: 20px; /* Indent list items */
 }
 
-.form-group {
-    margin-bottom: 15px; /* Space between form groups */
-}
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    nav ul li {
+        display: inline; /* Keep inline for larger screens */
+        margin-right: 20px;
+    }
 
-label {
-    display: block; /* Labels on new lines */
-    margin-bottom: 5px; /* Space below labels */
-}
+    .profile-container {
+        flex-direction: row; /* Side by side on larger screens */
+        justify-content: center;
+    }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 4px; /* Rounded corners for inputs */
-}
+    .profile-photo {
+        margin-right: 20px; /* Space between photo and text */
+    }
 
-.submit-button {
-    background-color: #28a745; /* Green button */
-    color: white; /* White text */
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.submit-button:hover {
-    background-color: #218838; /* Darker green on hover */
-}
-
-footer {
-    text-align: center; /* Centered footer text */
-    margin-top: 20px; /* Space above footer */
+    .welcome-section,
+    .services-section,
+    .education-section,
+    .experience-section,
+    .contact-section {
+        width: 60%; /* Adjust width for larger screens */
+    }
 }
